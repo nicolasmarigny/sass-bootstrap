@@ -18,7 +18,7 @@ $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 // Brand colors
 // -------------------------
 
-$brand-primary:         #428bca !default;
+$brand-primary:         #5c5c5c !default;
 $brand-success:         #5cb85c !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
@@ -34,19 +34,25 @@ $text-color:            $gray-dark !default;
 // -------------------------
 
 $link-color:            $brand-primary !default;
-$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-color:      lighten($link-color, 30%) !default;
 
 // Typography
 // -------------------------
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
-$font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace !default;
+//$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+//$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+//$font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace !default;
+
+$font-family-sans-serif:  Tahoma !default;
+$font-family-serif:       Tahoma !default;
+$font-family-monospace:   Tahoma !default;
+
 $font-family-base:        $font-family-sans-serif !default;
 
 $font-size-base:          14px !default;
 $font-size-large:         ceil($font-size-base * 1.25) !default; // ~18px
-$font-size-small:         ceil($font-size-base * 0.85) !default; // ~12px
+//$font-size-small:         ceil($font-size-base * 0.85) !default; // ~12px
+$font-size-small:         $font-size-base !default; // ~12px
 
 $font-size-h1:            floor($font-size-base * 2.6) !default; // ~36px
 $font-size-h2:            floor($font-size-base * 2.15) !default; // ~30px
@@ -87,7 +93,7 @@ $padding-small-horizontal:       10px !default;
 $line-height-large:              1.33 !default;
 $line-height-small:              1.5 !default;
 
-$border-radius-base:             4px !default;
+$border-radius-base:             3px !default;
 $border-radius-large:            6px !default;
 $border-radius-small:            3px !default;
 
@@ -261,7 +267,7 @@ $navbar-padding-horizontal:        floor($grid-gutter-width / 2) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 
 $navbar-default-color:             #777 !default;
-$navbar-default-bg:                #f8f8f8 !default;
+$navbar-default-bg:                white !default;
 $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
@@ -545,6 +551,7 @@ $thumbnail-caption-padding:   9px !default;
 // Wells
 // -------------------------
 $well-bg:                     #f5f5f5 !default;
+//$well-bg:                     #dadada !default;
 
 
 // Badges
